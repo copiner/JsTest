@@ -1,0 +1,10 @@
+var should = require('should');
+var User = require('./a.js');
+
+describe('user hooks',function(){
+    before('before user',function(){
+	User.save('wdaonngg');
+    });
+    beforeEach('beforeEach',function(){
+    })
+})

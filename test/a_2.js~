@@ -1,0 +1,2 @@
+User.save('wds');
+console.log(User.contains('wds'))

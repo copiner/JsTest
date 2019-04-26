@@ -1,8 +1,11 @@
 /*
   detects multiple calls to done()
 */
-it('double done', function(done) {
-    setImmediate(done);
-    setImmediate(done);
-});
+describe('double twice',function(){
+    it('double done', function(done) {
+	setImmediate(done);
+	setImmediate(done);
+    });
+})
+
  

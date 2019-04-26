@@ -2,27 +2,39 @@
 /*
 hooks
 */
-describe('hooks', function() {
-  before(function() {
-      // runs before all tests in this block
-      console.log("before");
-  });
+var stuDB = {};
 
-  after(function() {
-      // runs after all tests in this block
-      console.log("after");      
-  });
+/*
+@param name
+@constructor
+*/
 
-  beforeEach(function() {
-      // runs before each test in this block
-      console.log("beforeEach");      
-  });
+function User(name){
+    
+}
 
-  afterEach(function() {
-      // runs after each test in this block
-      console.log("afterEach");      
-  });
+/*
+save stu
+@param name
+*/
+User.save = function(name){
+    stuDB[name] = name;
+}
 
-    // test cases
-      console.log("hook");    
-});
+/*
+del stu
+@param name
+*/
+User.delete = function(name){
+    delete stuDB[name];
+}
+
+/*
+contains stu
+@return {boolean}}
+*/
+User.contains = function(name){
+    return stuDB[name] != null;
+}
+
+module.exports = User;
