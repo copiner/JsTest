@@ -1,0 +1,13 @@
+{
+  "name": "JsTest",
+  "version": "1.0.0",
+  "description": "jest abc",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {}
+}
